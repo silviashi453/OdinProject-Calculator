@@ -31,7 +31,7 @@ function clear() {
   lastOperation.textContent = "";
   firstNumber = "";
   secondNumber = "";
-  currentOperator = "";
+  currentOperator = null;
 }
 
 function deleteNumber() {
@@ -87,6 +87,7 @@ function appendNumber(number) {
 }
 
 function setOperator(operator) {
+  console.log(operator);
   if (currentOperator !== null) evaluate();
   firstNumber = currentOperation.textContent;
   currentOperator = operator;
@@ -95,6 +96,8 @@ function setOperator(operator) {
 }
 
 function evaluate() {
+  console.log("Operator is ", currentOperator);
+  console.log("But currentOperator === null is", currentOperator === null);
   if (currentOperator === null || resetScreen) return;
   if (currentOperator === "÷" && currentOperation.textContent === "0") {
     alert("You can't divide by 0!");
