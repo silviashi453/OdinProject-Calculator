@@ -84,7 +84,8 @@ main {
   padding: 5px;
   color: white;
   background-color: var(--darkest-grey);
-  min-width: 350px;
+  width: 20rem;
+  overflow: hidden;
 
   display: grid;
   gap: 1px;
@@ -120,7 +121,8 @@ button:hover {
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
-  flex-wrap: wrap;
+
+  word-wrap: break-word;
 }
 
 #currentOperation {

@@ -125,7 +125,7 @@ function handleKeyboardInput(event) {
   if (event.key === ".") processPoint();
   if (event.key === "=" || event.key === "Enter") evaluate();
   if (event.key === "Backspace") deleteNumber();
-  if (event.key === "Escape") clear();
+  if (event.key === "Delete") clear();
   if (
     event.key === "+" ||
     event.key === "-" ||
