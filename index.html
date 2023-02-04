@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="title-container">
+          <div class="circles">
+            <div class="circle circle--red"></div>
+            <div class="circle circle--yellow"></div>
+            <div class="circle circle--grey"></div>
+          </div>
+          <p class="title">Calculator</p>
+        </div>
+        <div class="calc-container">
+          <div id="display">
+            <div id="lastOperation"></div>
+            <div id="currentOperation">0</div>
+          </div>
+          <button class="item button--darker-gray clear">CE</button>
+          <button class="item button--darker-gray delete">DE</button>
+          <button class="item button--darker-gray sign">+/-</button>
+          <button class="item button--orange operator">÷</button>
+          <button class="item button--dark-gray number">7</button>
+          <button class="item button--dark-gray number">8</button>
+          <button class="item button--dark-gray number">9</button>
+          <button class="item button--orange operator">x</button>
+          <button class="item button--dark-gray number">4</button>
+          <button class="item button--dark-gray number">5</button>
+          <button class="item button--dark-gray number">6</button>
+          <button class="item button--orange operator">-</button>
+          <button class="item button--dark-gray number">1</button>
+          <button class="item button--dark-gray number">2</button>
+          <button class="item button--dark-gray number">3</button>
+          <button class="item button--orange operator">+</button>
+          <button class="item button--dark-gray number" id="zero">0</button>
+          <button class="item button--dark-gray point">.</button>
+          <button class="item button--orange equal">=</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
