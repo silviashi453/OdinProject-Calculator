@@ -87,7 +87,7 @@ function appendNumber(number) {
 }
 
 function setOperator(operator) {
-  if (currentOperator !== "") evaluate();
+  if (currentOperator !== null) evaluate();
   firstNumber = currentOperation.textContent;
   currentOperator = operator;
   lastOperation.textContent = `${firstNumber} ${currentOperator}`;
