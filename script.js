@@ -1,6 +1,6 @@
 let firstNumber = "";
 let secondNumber = "";
-let currentOperator = "";
+let currentOperator = null;
 let resetScreen = false;
 
 const numberButtons = document.querySelectorAll(".number");
